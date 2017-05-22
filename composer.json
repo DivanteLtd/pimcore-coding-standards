@@ -1,0 +1,19 @@
+{
+    "name"             : "snippety-zaglady/pimcore-coding-standards",
+    "description"      : "Rules for phpcs.",
+    "minimum-stability": "stable",
+    "type"             : "library",
+
+    "authors": [
+        {
+            "name"    : "Maciej Koprek",
+            "email"   : "mkoprek@divante.pl",
+            "homepage": "http://divante.co",
+            "role"    : "Lead Developer"
+        }
+    ],
+
+    "require-dev": {
+        "squizlabs/php_codesniffer": "@stable"
+    }
+}

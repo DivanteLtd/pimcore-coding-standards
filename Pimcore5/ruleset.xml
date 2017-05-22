@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+* PIMCORE 5 PHPCS ruleset
+* @date     22/05/2017 16:35
+* @author   Maciej Koprek <mkoprek@divante.pl>
+-->
+<ruleset name="Pimcore_PhpCs">
+    <description>Pimcore5 PHP CS Standards.</description>
+
+    <!-- We need to start from something -->
+    <rule ref="PSR2" />
+
+</ruleset>

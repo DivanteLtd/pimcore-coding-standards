@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+* PIMCORE 4.5 PHPCS ruleset
+* @date     08/05/2017 16:35
+* @author   Maciej Koprek <mkoprek@divante.pl>
+-->
+<ruleset name="Pimcore_PhpCs">
+    <description>Pimcore PHP CS Standards.</description>
+
+    <!-- We need to start from something -->
+    <rule ref="PSR2">
+        <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+        <!-- We won't to force anybody to push blink lines -->
+        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+    </rule>
+
+    <!-- Pimcore areas and controllers dosn't support namespaces -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>*/areas/*</exclude-pattern>
+        <exclude-pattern>*/website/controllers/*</exclude-pattern>
+    </rule>
+
+    <!-- Deprecated class name in Pimcore areas -->
+    <rule ref="Squiz.Classes.ValidClassName.NotCamelCaps">
+        <exclude-pattern>*/areas/*</exclude-pattern>
+    </rule>
+
+    <!-- Exclude all of Pimcore files-->
+    <exclude-pattern>/pimcore/</exclude-pattern>
+</ruleset>
