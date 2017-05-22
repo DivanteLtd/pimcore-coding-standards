@@ -1,19 +1,17 @@
 {
-    "name"             : "snippety-zaglady/pimcore-coding-standards",
-    "description"      : "Rules for phpcs.",
+    "name": "snippety-zaglady/pimcore-coding-standards",
+    "description": "Rules for PHP Code Sniffer",
     "minimum-stability": "stable",
-    "type"             : "library",
-
+    "type": "library",
     "authors": [
         {
-            "name"    : "Maciej Koprek",
-            "email"   : "mkoprek@divante.pl",
+            "name": "Maciej Koprek",
+            "email": "mkoprek@divante.pl",
             "homepage": "http://divante.co",
-            "role"    : "Lead Developer"
+            "role": "Lead Developer"
         }
     ],
-
-    "require-dev": {
+    "require": {
         "squizlabs/php_codesniffer": "@stable"
     }
 }
