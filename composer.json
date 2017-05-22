@@ -2,6 +2,7 @@
     "name": "snippety-zaglady/pimcore-coding-standards",
     "description": "Rules for PHP Code Sniffer",
     "minimum-stability": "stable",
+    "version": "1.0.0",
     "type": "library",
     "authors": [
         {
