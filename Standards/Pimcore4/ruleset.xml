@@ -6,8 +6,6 @@
 -->
 <ruleset name="Pimcore_PhpCs">
     <description>Pimcore PHP CS Standards.</description>
-
-    <!-- We need to start from something -->
     <rule ref="PSR2">
         <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
         <!-- We won't to force anybody to push blink lines -->
@@ -19,13 +17,17 @@
     <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
         <exclude-pattern>*/areas/*</exclude-pattern>
         <exclude-pattern>*/website/controllers/*</exclude-pattern>
+        <exclude-pattern>/plugins/*/controllers/*</exclude-pattern>
     </rule>
 
     <!-- Deprecated class name in Pimcore areas -->
     <rule ref="Squiz.Classes.ValidClassName.NotCamelCaps">
         <exclude-pattern>*/areas/*</exclude-pattern>
+        <exclude-pattern>/plugins/*/controllers/*</exclude-pattern>
     </rule>
 
-    <!-- Exclude all of Pimcore files-->
-    <exclude-pattern>/pimcore/</exclude-pattern>
+    <!-- Exclude all of Pimcore files -->
+    <exclude-pattern type="relative">/pimcore/</exclude-pattern>
+    <!-- This is hack for enea machine structure - we have there dir like pimcore/pimcore/files -->
+    <exclude-pattern>*/pimcore/pimcore/</exclude-pattern>
 </ruleset>
