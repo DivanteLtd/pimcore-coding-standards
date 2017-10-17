@@ -1,5 +1,5 @@
 {
-    "name"             : "snippety-zaglady/pimcore-coding-standards",
+    "name"             : "divante-ltd/pimcore-coding-standards",
     "description"      : "Rules for PHP Code Sniffer",
     "minimum-stability": "stable",
     "type"             : "library",
@@ -8,7 +8,7 @@
         {
             "name"    : "Maciej Koprek",
             "email"   : "mkoprek@divante.pl",
-            "homepage": "http://divante.co",
+            "homepage": "https://divante.co",
             "role"    : "Lead Developer"
         }
     ],
