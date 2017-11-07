@@ -14,10 +14,16 @@
     <rule ref="rulesets/design.xml" />
     <rule ref="rulesets/naming.xml">
         <exclude name="ShortVariable" />
+        <exclude name="ShortMethodName" />
     </rule>
     <rule ref="rulesets/naming.xml/ShortVariable">
         <properties>
             <property name="exceptions" description="Comma-separated list of exceptions" value="id"/>
         </properties>
     </rule>
+    <rule ref="rulesets/naming.xml/ShortMethodName">
+        <properties>
+            <property name="exceptions" description="Comma-separated list of exceptions" value="up"/>
+        </properties>
+    </rule>         
 </ruleset>
