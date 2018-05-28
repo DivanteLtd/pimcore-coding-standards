@@ -18,12 +18,12 @@
     </rule>
     <rule ref="rulesets/naming.xml/ShortVariable">
         <properties>
-            <property name="exceptions" description="Comma-separated list of exceptions" value="id"/>
+            <property name="exceptions" description="Comma-separated list of exceptions" value="id,em"/>
         </properties>
     </rule>
     <rule ref="rulesets/naming.xml/ShortMethodName">
         <properties>
             <property name="exceptions" description="Comma-separated list of exceptions" value="up"/>
         </properties>
-    </rule>         
+    </rule>           
 </ruleset>
