@@ -7,12 +7,14 @@
 -->
 <ruleset name="Pimcore_PhpCs">
     <description>Pimcore5 PHP CS Standards from Divante.</description>
-    
+
     <rule ref="PSR2" />
 
     <rule ref="Squiz.Strings.ConcatenationSpacing">
-      <properties>
-        <property name="spacing" value="1" />
-      </properties>
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="ignoreNewlines" value="true" />
+        </properties>
     </rule>
 </ruleset>
+
