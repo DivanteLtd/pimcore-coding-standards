@@ -6,7 +6,7 @@
 * @author   Mariusz Gomse <mgomse@divante.pl>
 -->
 <ruleset name="Pimcore_PhpCs">
-  <description>Pimcore5 PHP CS Standards from Divante.</description>
+  <description>Pimcore 5 PHP CS Standards from Divante.</description>
 
   <rule ref="PSR2" />
 

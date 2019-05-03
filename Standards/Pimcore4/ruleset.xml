@@ -5,7 +5,8 @@
 * @author   Maciej Koprek <mkoprek@divante.pl>
 -->
 <ruleset name="Pimcore_PhpCs">
-  <description>Pimcore PHP CS Standards.</description>
+  <description>Pimcore 4 PHP CS Standards from Divante.</description>
+
   <rule ref="PSR2">
     <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
     <!-- We won't to force anybody to push blink lines -->
