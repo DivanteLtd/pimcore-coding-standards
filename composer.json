@@ -1,19 +1,39 @@
 {
-    "name"             : "divante-ltd/pimcore-coding-standards",
-    "description"      : "Rules for PHP Code Sniffer",
-    "minimum-stability": "stable",
-    "type"             : "library",
-
-    "authors"          : [
-        {
-            "name"    : "Maciej Koprek",
-            "email"   : "mkoprek@divante.pl",
-            "homepage": "https://divante.co",
-            "role"    : "Lead Developer"
-        }
-    ],
-
-    "require"          : {
-        "squizlabs/php_codesniffer": "@stable"
+  "name": "divante-ltd/pimcore-coding-standards",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "description": "Coding standards rule sets for Pimcore 4 and Pimcore 5",
+  "keywords": [
+    "pimcore",
+    "coding-standards"
+  ],
+  "homepage": "https://www.divante.co/",
+  "authors": [
+    {
+      "name": "Maciej Koprek",
+      "email": "mkoprek@divante.pl",
+      "role": "Lead Developer"
+    },
+    {
+      "name": "Mariusz Gomse",
+      "email": "mgomse@divante.pl",
+      "role": "Team Leader"
+    },
+    {
+      "name": "Jakub Płaskonka",
+      "email": "jplaskonka@divante.pl",
+      "role": "Team Leader"
+    },
+    {
+      "name": "Bruno Ramalho",
+      "email": "bramalho@divante.pl",
+      "role": "Lead Developer"
     }
+  ],
+  "require": {
+    "squizlabs/php_codesniffer": "@stable"
+  },
+  "require-dev": {
+    "sclable/xml-lint": "^0.2.4"
+  }
 }

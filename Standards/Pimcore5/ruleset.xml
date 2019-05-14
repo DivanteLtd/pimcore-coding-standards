@@ -6,15 +6,15 @@
 * @author   Mariusz Gomse <mgomse@divante.pl>
 -->
 <ruleset name="Pimcore_PhpCs">
-    <description>Pimcore5 PHP CS Standards from Divante.</description>
+  <description>Pimcore 5 PHP CS Standards from Divante.</description>
 
-    <rule ref="PSR2" />
+  <rule ref="PSR2" />
 
-    <rule ref="Squiz.Strings.ConcatenationSpacing">
-        <properties>
-            <property name="spacing" value="1" />
-            <property name="ignoreNewlines" value="true" />
-        </properties>
-    </rule>
+  <rule ref="Squiz.Strings.ConcatenationSpacing">
+    <properties>
+      <property name="spacing" value="1" />
+      <property name="ignoreNewlines" value="true" />
+    </properties>
+  </rule>
 </ruleset>
 

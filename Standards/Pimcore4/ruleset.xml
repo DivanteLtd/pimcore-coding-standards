@@ -5,29 +5,30 @@
 * @author   Maciej Koprek <mkoprek@divante.pl>
 -->
 <ruleset name="Pimcore_PhpCs">
-    <description>Pimcore PHP CS Standards.</description>
-    <rule ref="PSR2">
-        <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
-        <!-- We won't to force anybody to push blink lines -->
-        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
-        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
-    </rule>
+  <description>Pimcore 4 PHP CS Standards from Divante.</description>
 
-    <!-- Pimcore areas and controllers dosn't support namespaces -->
-    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
-        <exclude-pattern>*/areas/*</exclude-pattern>
-        <exclude-pattern>*/website/controllers/*</exclude-pattern>
-        <exclude-pattern>/plugins/*/controllers/*</exclude-pattern>
-    </rule>
+  <rule ref="PSR2">
+    <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+    <!-- We won't to force anybody to push blink lines -->
+    <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+    <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+  </rule>
 
-    <!-- Deprecated class name in Pimcore areas -->
-    <rule ref="Squiz.Classes.ValidClassName.NotCamelCaps">
-        <exclude-pattern>*/areas/*</exclude-pattern>
-        <exclude-pattern>/plugins/*/controllers/*</exclude-pattern>
-    </rule>
+  <!-- Pimcore areas and controllers dosn't support namespaces -->
+  <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+    <exclude-pattern>*/areas/*</exclude-pattern>
+    <exclude-pattern>*/website/controllers/*</exclude-pattern>
+    <exclude-pattern>/plugins/*/controllers/*</exclude-pattern>
+  </rule>
 
-    <!-- Exclude all of Pimcore files -->
-    <exclude-pattern type="relative">/pimcore/</exclude-pattern>
-    <!-- This is hack for enea machine structure - we have there dir like pimcore/pimcore/files -->
-    <exclude-pattern>*/pimcore/pimcore/</exclude-pattern>
+  <!-- Deprecated class name in Pimcore areas -->
+  <rule ref="Squiz.Classes.ValidClassName.NotCamelCaps">
+    <exclude-pattern>*/areas/*</exclude-pattern>
+    <exclude-pattern>/plugins/*/controllers/*</exclude-pattern>
+  </rule>
+
+  <!-- Exclude all of Pimcore files -->
+  <exclude-pattern type="relative">/pimcore/</exclude-pattern>
+  <!-- This is hack for enea machine structure - we have there dir like pimcore/pimcore/files -->
+  <exclude-pattern>*/pimcore/pimcore/</exclude-pattern>
 </ruleset>
