@@ -4,5 +4,8 @@ cache:
   directories:
     - $HOME/.cache/composer
 
+install:
+  - composer install
+
 script:
   - vendor/bin/xmllint ./Standards/
