@@ -64,20 +64,15 @@ $rules = [
 
 $finder = (new PhpCsFixer\Finder)
   ->in([
-    __DIR__ . '/../../../../../src',
+    __DIR__ . '/../../../../../../src',
   ])
 
   // do not fix views
   ->notName('*.html.php')
 
   // using notPath instead of exclude here as they can be nested (install-profiles)
-  ->notPath(  __DIR__ . '/../../../../../var\/config')
-  ->notPath(  __DIR__ . '/../../../../../var\/classes');
-
-
-foreach ($finder as $file) {
-  dump($file->getRealPath());
-};
+  ->notPath(__DIR__ . '/../../../../../../var\/config')
+  ->notPath(__DIR__ . '/../../../../../../var\/classes');
 
 // do not enable self_accessor as it breaks pimcore models relying on get_called_class()
 return (new PhpCsFixer\Config)

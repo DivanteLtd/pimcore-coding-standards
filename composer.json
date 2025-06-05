@@ -33,7 +33,9 @@
   "require": {
     "squizlabs/php_codesniffer": "@stable",
     "friendsofphp/php-cs-fixer": "^3.4",
-    "ekino/phpstan-banned-code": "^2.0"
+    "ekino/phpstan-banned-code": "^2.0",
+    "phpmd/phpmd": "^2.15",
+    "phpstan/phpstan": "1.*"
   },
   "require-dev": {
     "sclable/xml-lint": "^0.2.4"
