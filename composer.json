@@ -31,7 +31,13 @@
     }
   ],
   "require": {
-    "squizlabs/php_codesniffer": "@stable"
+    "squizlabs/php_codesniffer": "@stable",
+    "friendsofphp/php-cs-fixer": "^3.4",
+    "phpmd/phpmd": "^2.15",
+    "ekino/phpstan-banned-code": "^2.0",
+    "phpstan/phpstan": "1.*",
+    "phpstan/phpstan-doctrine": "1.*",
+    "phpstan/phpstan-symfony": "1.*"
   },
   "require-dev": {
     "sclable/xml-lint": "^0.2.4"
