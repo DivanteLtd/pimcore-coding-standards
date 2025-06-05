@@ -33,7 +33,7 @@
   "require": {
     "squizlabs/php_codesniffer": "@stable",
     "friendsofphp/php-cs-fixer": "^3.4",
-    "ekino/phpstan-banned-code": "^3.0"
+    "ekino/phpstan-banned-code": "^2.0"
   },
   "require-dev": {
     "sclable/xml-lint": "^0.2.4"
