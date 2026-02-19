@@ -1,6 +1,6 @@
 {
   "name": "divante-ltd/pimcore-coding-standards",
-  "type": "library",
+  "type": "phpcodesniffer-standard",
   "license": "GPL-3.0-or-later",
   "description": "Coding standards rule sets for Pimcore 4 and Pimcore 5",
   "keywords": [
